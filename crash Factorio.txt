@@ -1,0 +1,38 @@
+210.955 Error MainLoop.cpp:1035: Exception at tick 12010: Error while running event Ninjario::on_change_Visibility (ID 108)
+LuaTrain::state is read only.
+stack traceback:
+	__Ninjario__/methods/vehicleFunctions.lua:102: in function 'copylocalDataToEntity'
+	__Ninjario__/methods/vehicleFunctions.lua:100: in function 'copylocalDataToEntity'
+	__Ninjario__/methods/vehicleFunctions.lua:130: in function 'changeVisibility'
+	__Ninjario__/methods/globalEvents.lua:3: in function 'calledFunction'
+	__Ninjario__/control.lua:214: in function <__Ninjario__/control.lua:210
+Factorio crashed. Generating symbolized stacktrace, please wait ...
+c:\cygwin64\tmp\factorio-build-gumsut\libraries\stackwalker\stackwalker.cpp (924): StackWalker::ShowCallstack
+c:\cygwin64\tmp\factorio-build-gumsut\src\util\logger.cpp (408): Logger::writeStacktrace
+c:\cygwin64\tmp\factorio-build-gumsut\src\util\logger.cpp (521): Logger::logStacktrace
+c:\cygwin64\tmp\factorio-build-gumsut\src\util\logging.cpp (89): Logging::logAndAbortOrThrow
+c:\cygwin64\tmp\factorio-build-gumsut\src\util\logging.cpp (83): Logging::logAndAbortOrThrow
+c:\cygwin64\tmp\factorio-build-gumsut\src\rail\train.cpp (153): Train::drawLights
+c:\cygwin64\tmp\factorio-build-gumsut\srcöiug\graphics\lightrenderer.cpp (66): LightRenderer::prepare
+c:\cygwin64\tmp\factorio-build-gumsut\src\graphics\gamerenderer.cpp (149): GameRenderer::prepareJob
+c:\cygwin64\tmp\factorio-build-gumsut\src\graphics\gamerenderer.cpp (130): GameRenderer::prepare
+c:\cygwin64\tmp\factorio-build-gumsut\src\gameview.cpp (975): GameView::prepareRender
+c:\cygwin64\tmp\factorio-build-gumsut\src\mainloop.cpp (813): MainLoop::prepare
+c:\cygwin64\tmp\factorio-build-gumsut\src\mainloop.cpp (541): MainLoop::mainLoopStep
+c:\cygwin64\tmp\factorio-build-gumsut\src\mainloop.cpp (338): MainLoop::run
+c:\cygwin64\tmp\factorio-build-gumsut\src\main.cpp (1130): wmain
+f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl (283): __scrt_common_main_seh
+ERROR: SymGetLineFromAddr64, GetLastError: 487 (Address: 00000000776759CD)
+00000000776759CD (kernel32): (filename not available): BaseThreadInitThunk
+ERROR: SymGetLineFromAddr64, GetLastError: 487 (Address: 00000000777D385D)
+00000000777D385D (ntdll): (filename not available): RtlUserThreadStart
+Stack trace logging done
+ 218.571 Error RollingStock.cpp:843: Internal error in RollingStock::getNeighborDirection, neighbor not specified
+Logger::writeStacktrace skipped.
+ 218.572 Error CrashHandler.cpp:174: Map tick at moment of crash: 12010
+ 218.573 Error Util.cpp:67: Unexpected error occurred. If you're running the latest version of the game you can help us solve the problem by posting the contents of the log file on the Factorio forums.
+Please also include the save file(s), any mods you may be using, and any steps you know of to reproduce the crash.
+ 222.385 Uploading log file
+ 222.450 Error CrashHandler.cpp:227: Heap validation: success.
+ 222.452 Creating crash dump.
+ 222.664 CrashDump success
